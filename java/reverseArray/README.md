@@ -8,4 +8,4 @@ I am required to write a function that reverse the indexes of an arrays.
 
 ## Approach & Efficiency
 
-it took 1 hour to solve this code challenge.
+it took 1 hour to solve this code challenge.>>>>>
