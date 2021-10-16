@@ -3,7 +3,7 @@ I am required to write a function that adds an extra integer the the miggle of a
 
 
 
-![shift](./assets/code2.png)
+![shift](./assets/code22.png)
 
 
 ## Approach & Efficiency
