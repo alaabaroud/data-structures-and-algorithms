@@ -8,4 +8,4 @@ I am required to write a function that adds an extra integer the the miggle of a
 
 ## Approach & Efficiency
 
-it took 2 hours to solve this code challenge.>>>>>
+it took 2 hours to solve this code challenge.
