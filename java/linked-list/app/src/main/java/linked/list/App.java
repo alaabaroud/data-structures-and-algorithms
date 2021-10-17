@@ -13,5 +13,28 @@ public class App {
 
         System.out.println(linkedList.toString());
         System.out.println(linkedList.includes(4));
+        ////////////////////////////////
+        LinkedList<Integer> linkedList2 = new LinkedList<>();
+
+        linkedList2.append(1);
+        linkedList2.append(2);
+        linkedList2.append(3);
+        linkedList2.append(4);
+        System.out.println(linkedList2.toString());
+        System.out.println();
+        linkedList2.insertBefore(2, 8);
+        System.out.println(linkedList2);
+      linkedList2.insertBefore(8, 9);
+      System.out.println(linkedList2);
+
+      //////////////////
+        System.out.println();
+        linkedList2.insertAfter(1, 7);
+        System.out.println(linkedList2);
+
+
+
+
+
     }
 }
