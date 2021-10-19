@@ -4,26 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91ed1141-5cbd-401f-a169-7fb0c1bd41ad" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bin/main/linked/list/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/linked/list/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/linked/list/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/main/linked/list/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/linked/list/LinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/main/linked/list/LinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/test/linked/list/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/test/linked/list/AppTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/linked/list/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/linked/list/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/linked/list/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/linked/list/LinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/linked/list/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/linked/list/AppTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="91ed1141-5cbd-401f-a169-7fb0c1bd41ad" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
