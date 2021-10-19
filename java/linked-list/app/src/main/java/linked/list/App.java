@@ -6,7 +6,7 @@ package linked.list;
 
 public class App {
     public static void main(String[] args) {
-        LinkedList<Integer> linkedList = new LinkedList<>();
+        LinkedList<Integer> linkedList = new LinkedList<Integer>();
         linkedList.insert(1);
         linkedList.insert(2);
         linkedList.insert(3);
