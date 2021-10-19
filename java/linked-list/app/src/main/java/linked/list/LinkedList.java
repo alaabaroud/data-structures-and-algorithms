@@ -83,6 +83,7 @@ public void insertAfter(T value, int newValue) {
 Node<T> newNode = new Node(newValue);
 if (head == null){
     head= newNode;
+
 }else {
     Node<T> current = head;
     while (current!= null){
