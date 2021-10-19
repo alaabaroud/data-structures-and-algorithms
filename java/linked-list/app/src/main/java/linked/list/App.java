@@ -34,6 +34,11 @@ public class App {
         System.out.println();
         linkedList2.insertAfter(1, 7);
         System.out.println(linkedList2);
+        LinkedList<Integer> linkedList3=new LinkedList<>();
+        linkedList.toString();
+         linkedList2.toString();
+         System.out.println("tessssssssssssssssst");
+        System.out.println(linkedList3.zip(linkedList2,linkedList));
 
 
 

@@ -3,6 +3,7 @@ package linked.list;
 
 import java.util.*;
 
+
 public class LinkedList <T>{
     Node<T> head;
 
@@ -121,6 +122,25 @@ if ( K > counter || K <0){
 }
 return "";
 
+}
+
+public LinkedList<T> zip( LinkedList<T> listA, LinkedList<T> listB){
+Node<T> currentListA = listA.head;
+Node<T> currentListB = listB.head;
+if (currentListA == null) {
+    insert(currentListB.value);
+}else if (currentListB==null){
+    insert(currentListA.value);
+}else if (currentListA != null && currentListB != null  ) {
+    listB.insertBefore(currentListA.value, currentListB.value);
+    currentListB = currentListB.next;
+    currentListA = currentListA.next;
+
+} else if (currentListA!= null){
+    listB.append(currentListA.value);
+}
+listA.head = currentListA;
+    return listB;
 }
 
 
