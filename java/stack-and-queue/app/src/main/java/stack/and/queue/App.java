@@ -3,12 +3,12 @@
  */
 package stack.and.queue;
 
-public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+java.util.stack (Integer) stack = new java.util.stack<> (); 
 
-    public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
-    }
+public class App {
+  public static void main(String[] args) {
+
+
+
+  }
 }
