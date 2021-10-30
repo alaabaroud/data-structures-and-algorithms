@@ -13,3 +13,8 @@ To test use ./gradle test in the terminal.
 ## API
 <!-- Description of each method publicly available to your Stack and Queue-->
 no API's
+
+## code challenge 11 :
+I am required to make a queue using two stacks so we can add to the first node in the queue.
+
+![alt text](assets/Screenshot.png)

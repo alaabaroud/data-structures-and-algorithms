@@ -36,6 +36,21 @@ public class App {
 //      System.out.println(queue.rear.toString());
 
 
+      ///// pseudoQueue
+      System.out.println("pseudoooooooooooo");
+      PseudoQueue pseudo = new PseudoQueue();
+      pseudo.enqueue("1");
+      pseudo.enqueue("2");
+      pseudo.enqueue("3");
+      pseudo.enqueue("4");
+      pseudo.enqueue("5");
+      pseudo.enqueue("6");
+      pseudo.enqueue("7");
+      pseudo.enqueue("10000");
+      System.out.println(pseudo.firstStack.toString());
+      System.out.println(pseudo.dequeue());
+
+
 
     }
 
