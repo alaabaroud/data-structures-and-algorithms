@@ -44,11 +44,17 @@ public class Stack<T> {
     return  top == null;
   }
 
-//  @Override
-//  public String toString() {
-//    return "Stack{" +
-//      "top=" + top +
-//      '}';
-//
-//  }
+  @Override
+  public String toString() {
+    if (top == null) return  "null";
+    String List = "Top =";
+    Node<T> current = top;
+    while (current != null){
+      List += current.value+ " = > ";
+      current = current.next;
+    }
+    List+= "null";
+    return List;
+  }
+
 }
