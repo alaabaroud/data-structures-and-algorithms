@@ -13,6 +13,9 @@ import java.util.ArrayList;
       this.root = new Node<>(value);
     }
 
+    public BinaryTree() {
+    }
+
     public ArrayList<T> preOrder(Node<T> root) {
       if(root != null) {
         this.preOrderList.add(root.value);
