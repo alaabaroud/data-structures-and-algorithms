@@ -1,8 +1,9 @@
 package trees;
 
 import java.util.ArrayList;
+import java.util.List;
 
-  public class BinaryTree<T> {
+public class BinaryTree<T> {
     Node<T> root;
     ArrayList<T> preOrderList = new ArrayList<>();
     ArrayList<T> inOrderList = new ArrayList<>();
@@ -52,6 +53,18 @@ import java.util.ArrayList;
         this.postOrderList.add(root.value);
       }
       return this.postOrderList;
+    }
+
+
+    public Integer max() {
+      Integer max = 0;
+      ArrayList<T> maxlist = preOrder(this.root);
+      for (T t : maxlist){
+        if ( max< (Integer) t){
+          max = (Integer) t;
+        }
+      }
+      return max;
     }
   }
 

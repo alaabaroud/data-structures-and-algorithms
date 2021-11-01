@@ -25,6 +25,9 @@ public class App {
 
       System.out.println(BST.inOrder(BST.root).toString());
       System.out.println(BST.preOrder(BST.root).toString());
+      System.out.println("----maximum ---");
+      System.out.println(BST.max());
+
 
 
     }
