@@ -1,7 +1,6 @@
 package trees;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class BinaryTree<T> {
     Node<T> root;
@@ -53,6 +52,27 @@ public class BinaryTree<T> {
         this.postOrderList.add(root.value);
       }
       return this.postOrderList;
+    }
+
+    public  ArrayList<Integer> breadth (BinaryTree<Integer> tree) {
+      ArrayList<Integer> list = new ArrayList<Integer>();
+
+
+      Queue<Node> queue = new LinkedList<>();
+      if(tree.root != null) {
+        queue.add(tree.root);
+        while (!queue.isEmpty()){
+          Node node = queue.remove();
+          list.add((Integer) node.value);
+          if(node.left !=null ){
+            queue.add(node.left);
+          }
+          if (node.right != null) {
+            queue.add(node.right);
+          }
+        }
+      }
+      return list;
     }
 
 
