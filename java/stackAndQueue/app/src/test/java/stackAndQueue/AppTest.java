@@ -5,7 +5,7 @@ package stackAndQueue;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-
+import static stackAndQueue.Brackets.brackets;
 class AppTest {
   @Test
   public void push(){
@@ -76,6 +76,21 @@ assertTrue(EmptyQueue.isEmpty());  }
     dequeue.enqueue("hello");
     dequeue.enqueue("there");
     assertEquals("there", dequeue.rear.value);
+  }
+
+  @Test void stackQueueBrackets() {
+
+
+    String testString = "";
+    assertTrue(brackets(testString));
+    testString = "mm (  )";
+    assertTrue(brackets(testString));
+    testString = " ({}] )";
+    assertFalse(brackets(testString));
+    testString = "[ { ( { } ] )";
+    assertFalse(brackets(testString));
+    testString = "[[({})]]";
+    assertTrue(brackets(testString));
   }
 
 }

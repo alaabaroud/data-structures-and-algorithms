@@ -67,6 +67,19 @@ public class App {
 
         System.out.println(lists.catQueue.toString());
         System.out.println(lists.dogQueue.toString());
+        Brackets list = new Brackets();
+
+        System.out.println("Brackets");
+        System.out.println(" the result is --> " + Brackets.brackets("[[by]]"));
+        System.out.println("the result is --> " + Brackets.brackets("({{}})"));
+        System.out.println("the result is --> " + Brackets.brackets("{()"));
+        System.out.println(" the result is --> " + Brackets.brackets("({}"));
+        System.out.println("the result is --> " + Brackets.brackets("int )"));
+        System.out.println(" the result is --> " + Brackets.brackets(""));
+        System.out.println(" the result is --> " + Brackets.brackets("mooo"));
+        System.out.println("the result is --> " + Brackets.brackets("m((}}"));
+
+
       }
 
 }
