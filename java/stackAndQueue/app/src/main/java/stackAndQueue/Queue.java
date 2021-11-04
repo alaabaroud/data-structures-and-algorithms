@@ -1,63 +1,61 @@
 package stackAndQueue;
 
-public class Queue {
+public class Queue<T> {
 
-  Node front;
-  Node rear;
+  Node<T> front;
+  Node<T> rear;
 
-  public Queue(Node front, Node rear) {
-    this.front = front;
-    this.rear = rear;
+  public void enqueue(T value){
+    Node<T> newNode = new Node<>(value);
+    if (front == null){
+      front = newNode;
+    } else {
+      rear.next = newNode;
+    }
+    rear = newNode;
   }
 
-  public Queue() {
-
-  }
-
-
-  public  void enqueue (String value){
-    if(isEmpty()) {
-      Node node = new Node (value);
-      front = node;
-      rear =node;
-    }else{
-      Node node = new Node(value);
-      rear.setNext(node);
-      rear = node;
+  public T dequeue() {
+    try {
+      Node<T> temp = front;
+      front = front.next;
+      temp.next = null;
+      return temp.value;
+    } catch (NullPointerException e) {
+      e.printStackTrace();
+      System.out.println("it is empty");
+      return null;
     }
   }
 
-  public String dequeue() {
-    if(isEmpty()){
-      return "empty";
-    }else{
-      String value = front.getValue();
-      front = front.getNext();
-      return value;
-    }
-  }
-  public String peek() {
-    if(isEmpty()){
-      return "empty";
-    }else {
-      return front.getValue();
+  public T peek() {
+    try {
+      return front.value;
+    } catch (NullPointerException e) {
+      e.printStackTrace();
+      System.out.println("it is empty");
+      return null;
     }
   }
 
-  public  boolean isEmpty(){
-    return(front == null);
-
+  public boolean isEmpty(){
+    if (front == null) return true;
+    return false;
   }
 
-//  @Override
-//  public String toString() {
-//    return "Queue{" +
-//      "front=" + front +
-//      ", rear=" + rear +
-//      '}';
-//
-//
-//  }
+  @Override
+  public String toString() {
+    if (front == null) return "null";
+    String outList = "front = ";
+    Node<T> current = front;
+
+    while (current != null){
+
+      outList += current.value+ " = > ";
+      current = current.next;
+    }
+    outList += "Null";
+    return outList;
+  }
 
 }
-

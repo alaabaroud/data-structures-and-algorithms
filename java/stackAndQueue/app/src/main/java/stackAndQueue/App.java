@@ -3,56 +3,70 @@
  */
 package stackAndQueue;
 
+import stackAndQueue.Animals.AnimalShelter;
+import stackAndQueue.Animals.Cat;
+import stackAndQueue.Animals.Dog;
+
 public class App {
-//    public String getGreeting() {
-//        return "Hello World!";
-//    }
-//
-    public static void main(String[] args) {
 
 
-      Stack<String> stack = new Stack<>();
-      stack.push("hi");
-      stack.push("there");
-      stack.push("I'm Alaa");
+      public static void main(String[] args) {
+        System.out.println("hello");
+        Stack<Integer> stackList = new Stack<>();
+        stackList.push(1);
+        stackList.push(2);
+        stackList.push(3);
+        stackList.push(4);
+
+    System.out.println("Stack ");
+    System.out.println( stackList);
+    System.out.println( stackList.isEmpty());
+    System.out.println( stackList.pop());
+    System.out.println( stackList.peek());
+    System.out.println( stackList);
 
 
+        Queue<String> queueList = new Queue<>();
+        queueList.enqueue("1");
+        queueList.enqueue("2");
+        queueList.enqueue("3");
+        queueList.enqueue("4");
 
-      System.out.println(stack.peek());
-      System.out.println(stack.pop());
-
-
-
-      System.out.println(stack.top.value);
-      System.out.println("--------queue------");
-
-      Queue queue = new Queue();
-      queue.enqueue("hi");
-      queue.enqueue("there");
-      System.out.println(queue.rear.value);
-      System.out.println(queue.peek());
-      System.out.println(queue.rear.value);
-
-//      System.out.println(queue.rear.toString());
+    System.out.println("Queue");
+    System.out.println( queueList);
+    System.out.println(queueList.isEmpty());
+    System.out.println(queueList.dequeue());
+    System.out.println(queueList.peek());
+    System.out.println( queueList);
 
 
-      ///// pseudoQueue
-      System.out.println("pseudoooooooooooo");
-      PseudoQueue pseudo = new PseudoQueue();
-      pseudo.enqueue("1");
-      pseudo.enqueue("2");
-      pseudo.enqueue("3");
-      pseudo.enqueue("4");
-      pseudo.enqueue("5");
-      pseudo.enqueue("6");
-      pseudo.enqueue("7");
-      pseudo.enqueue("10000");
-      System.out.println(pseudo.firstStack.toString());
-      System.out.println(pseudo.dequeue());
+    PseudoQueue test = new PseudoQueue();
+    test.enqueue(7);
+    test.enqueue(3);
+    test.enqueue(5);
+    test.enqueue(4);
+    test.enqueue(7);
+    test.dequeue();
+    test.enqueue(11);
+    test.dequeue();
+    test.dequeue();
+    System.out.println(test.stackOne.toString());
+
+        ////////////////////code 12 /////////
 
 
+        AnimalShelter lists = new AnimalShelter();
+        lists.enqueue(new Cat("Cat1"));
+        lists.enqueue(new Cat("Cat2"));
+        lists.enqueue(new Cat("Cat3"));
+        lists.enqueue(new Dog("Dog1"));
+        lists.enqueue(new Dog("Dog2"));
+        lists.enqueue(new Dog("Dog3"));
+        lists.dequeue("cat");
+        lists.dequeue("dog");
 
-    }
-
+        System.out.println(lists.catQueue.toString());
+        System.out.println(lists.dogQueue.toString());
+      }
 
 }
