@@ -1,28 +1,24 @@
 package stackAndQueue;
 
-public class PseudoQueue {
+public class PseudoQueue <T> {
+  public Stack<T> stackOne = new Stack<T>();
+  public Stack<T> stackTwo = new Stack<T>();
 
-  public Stack firstStack= new Stack();
-  public Stack secondStack= new Stack();
 
-
-  public void enqueue (String value) {
-    firstStack.push( value);
-
+  public void enqueue(T value){
+    stackOne.push(value);
   }
-
-  public  String dequeue() {
-    String returnValue = null;
-    if(secondStack.isEmpty()) {
-      while (!firstStack.isEmpty()){
-        secondStack.push(firstStack.pop());
+  public T dequeue(){
+    T returnValue = null;
+    if (stackTwo.isEmpty()){
+      while (!stackOne.isEmpty()){
+        stackTwo.push(stackOne.pop());
       }
-      returnValue = secondStack.pop();
-      while (!secondStack.isEmpty()){
-        firstStack.push(secondStack.pop());
+      returnValue=stackTwo.pop();
+      while (!stackTwo.isEmpty()){
+        stackOne.push(stackTwo.pop());
       }
     }
-    return  returnValue;
+    return returnValue;
   }
-
 }
