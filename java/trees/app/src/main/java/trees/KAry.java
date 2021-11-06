@@ -21,6 +21,20 @@ public class KAry<T> {
       this.root = newNode;
       return;
     }
+    Queue<Knode<T>> queueNodes = new LinkedList<>();
+    queueNodes.add(root);
+    while(!queueNodes.isEmpty()){
+      Knode<T> current = queueNodes.poll();
+      if(current.kChildren.size() < this.k){
+        current.add(newNode);
+        return;
+      }
+      else {
+        queueNodes.addAll(current.kChildren);
+      }
+    }
+
   }
+
 
 }

@@ -3,6 +3,9 @@
  */
 package trees;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class App {
   public static Object breadth(BinaryTree<Integer> testBinary2) {
     return null;
@@ -35,11 +38,44 @@ public class App {
 
       System.out.println(BST.breadth(BST).toString());
 
-
+      KAry<Integer> test = new KAry<>(3);
+      test.add(1);
+      test.add(8);
+      test.add(2);
+      System.out.println("-----fizzBuzz---");
+      System.out.println(fizzBuzz(test).root.value);
 
     }
 
 
+  public static KAry<String> fizzBuzz(KAry<Integer> tree){
+    KAry<String> newTree = new KAry<>(tree.k);
+    Queue<Knode<Integer>> newQueue = new LinkedList<>();
+    if(tree.root != null){
+      newQueue.add(tree.root);
+      while(!newQueue.isEmpty()){
+        Knode<Integer> current = newQueue.poll();
+        String currentValue;
+        if(current.value % 3 == 0 && current.value % 5 == 0)
+          currentValue = "FizzBuzz";
+        else if((int)current.value % 3 == 0){
+          currentValue="Fizz";
+        }
+        else if((int)current.value % 5 == 0){
+          currentValue="Buzz";
+        }
+        else{
+          currentValue=current.value.toString();
+        }
+        newTree.add(currentValue);
+        if(! current.kChildren.isEmpty()){
+          newQueue.addAll(current.kChildren);
+        }
+      }
+    }
+    return newTree;
+  }
+    }
 
 
-}
+
