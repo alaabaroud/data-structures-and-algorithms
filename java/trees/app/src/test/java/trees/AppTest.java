@@ -8,9 +8,38 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
     @Test void appHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
-
-
+      App classUnderTest = new App();
+      assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
     }
+
+      @Test void BinaryTreeTest(){
+        BinaryTree<Integer> testBinary = new BinaryTree<>();
+        assertNull(testBinary.root);
+
+        BinaryTree<Integer> testBinary2 = new BinaryTree<>(1);
+        assertEquals(1,testBinary2.root.value);
+
+
+        testBinary2.root.left = new Node<>(3);
+        testBinary2.root.right = new Node<>(5);
+        assertEquals(3,testBinary2.root.left.value);
+        assertEquals(5,testBinary2.root.right.value);
+
+        assertEquals("[1, 3, 5]",testBinary2.preOrder(testBinary2.root).toString());
+
+
+        assertEquals("[3, 1, 5]",testBinary2.inOrder(testBinary2.root).toString());
+
+
+        assertEquals("[3, 5, 1]",testBinary2.postOrder(testBinary2.root).toString());
+
+        assertEquals(5,testBinary2.max());
+
+        if (App.breadth(testBinary2) != null) {
+          assertEquals("[1, 3, 5]", App.breadth(testBinary2).toString());
+        }
+
+      }
+
+
 }

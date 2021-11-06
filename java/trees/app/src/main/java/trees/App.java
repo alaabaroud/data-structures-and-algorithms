@@ -4,7 +4,11 @@
 package trees;
 
 public class App {
-    public String getGreeting() {
+  public static Object breadth(BinaryTree<Integer> testBinary2) {
+    return null;
+  }
+
+  public String getGreeting() {
         return "Hello World!";
     }
 
