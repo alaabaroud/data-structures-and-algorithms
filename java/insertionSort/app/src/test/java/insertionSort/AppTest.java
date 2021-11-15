@@ -4,6 +4,9 @@
 package insertionSort;
 
 import org.junit.jupiter.api.Test;
+
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
@@ -11,4 +14,10 @@ class AppTest {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
     }
-}
+
+    @Test
+    void insertionSortTest() {
+int [] array = {8,9,5};
+assertEquals( "[5, 8, 9]",Arrays.toString(App.InsertionSort(array)));
+    }
+ }
