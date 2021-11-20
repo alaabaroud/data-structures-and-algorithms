@@ -26,10 +26,10 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass = 'MergeSort.App'
+    mainClass = 'java.App'
 }
 
-
-test {
-  useJUnitPlatform()
+tasks.named('test') {
+    // Use JUnit Platform for unit tests.
+    useJUnitPlatform()
 }
