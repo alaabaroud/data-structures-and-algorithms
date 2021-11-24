@@ -8,26 +8,26 @@ import java.util.Hashtable;
 public class App <K, T> {
 
 
-    public static void main(String[] args) {
-
-      // Creating an empty Hashtable
-      Hashtable<Integer, String> hashTable =
-        new Hashtable<Integer, String>();
-// adding to the tanble
-      hashTable.put(10, "alaa");
-      hashTable.put(15, "hello");
-      hashTable.put(20, "ADD");
-      hashTable.put(25, "Welcomes");
-      hashTable.put(30, "hashtable");
-
-      System.out.println("adding to the table: " + hashTable);
-      hashTable.put(35, "newHashtable");
-      System.out.println("new hashtable: " + hashTable);
-// contains
-      System.out.println("does this hashtable contains 'alaa'? " +
-        hashTable.contains("alaa"));
-
-    }
+  public static void main(String[] args) {
+HashTable<Object, Object> Table = new HashTable<>();
+Table.add("hello", 5);
+    Table.add("from", 7);
+    Table.add("hash", 8);
+    Table.add("table", 2);
+    System.out.println(Table);
+    System.out.println(Table.get("hello"));
 
 
+    System.out.println(Table.contains("from"));
+
+    System.out.println(Table.hash("hash"));
+    System.out.println(Table.hash("from"));
+    System.out.println(Table.hash("hello"));
+
+
+    System.out.println(Table);
+
+
+
+  }
 }
