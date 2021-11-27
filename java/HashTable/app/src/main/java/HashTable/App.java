@@ -3,7 +3,9 @@
  */
 package HashTable;
 
+import java.util.HashMap;
 import java.util.Hashtable;
+import java.util.Map;
 
 public class App <K, T> {
 
@@ -14,20 +16,32 @@ Table.add("hello", 5);
     Table.add("from", 7);
     Table.add("hash", 8);
     Table.add("table", 2);
-    System.out.println(Table);
+//    System.out.println(Table);
     System.out.println(Table.get("hello"));
+//
+//
+//    System.out.println(Table.contains("from"));
+//
+//    System.out.println(Table.hash("hash"));
+//    System.out.println(Table.hash("from"));
+//    System.out.println(Table.hash("hello"));
+//
+//
+//    System.out.println(Table);
 
-
-    System.out.println(Table.contains("from"));
-
-    System.out.println(Table.hash("hash"));
-    System.out.println(Table.hash("from"));
-    System.out.println(Table.hash("hello"));
-
-
-    System.out.println(Table);
-
+    System.out.println(repeatedWord("hello alaa  alaa  "));
+  }
+  public static String repeatedWord(String sentence) {
+    Map<String,String> hashMap = new HashMap<>();
+    String[] allWords = sentence.split(" ");
+    for (String word : allWords) {
+      word = word.toLowerCase();
+      if (hashMap.containsKey(word))return word;
+      else  hashMap.put(word,word);
+    }
+    return null;
+  }
 
 
   }
-}
+
