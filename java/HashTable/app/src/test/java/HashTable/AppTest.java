@@ -26,4 +26,13 @@ class AppTest {
 
 
   }
+
+
+  @Test
+  void hashMap_repeated_word() {
+
+
+    String book = "It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn’t know what I was doing in New York...";
+    assertEquals("the", App.repeatedWord(book));
+  }
 }
