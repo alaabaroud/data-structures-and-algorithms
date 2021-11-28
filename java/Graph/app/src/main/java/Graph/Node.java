@@ -3,6 +3,8 @@ package Graph;
 import java.util.Objects;
 
 public class Node <T> {
+  public Node next;
+
   public T value;
 
   public Node() {}

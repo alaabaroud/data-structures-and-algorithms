@@ -26,6 +26,9 @@ public class App {
 
       System.out.println(appGraph.size());
 
+      ////////////////////
+      System.out.println(appGraph.breadthFirst("graph"));
+
 
 
     }
