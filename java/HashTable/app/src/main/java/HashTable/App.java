@@ -6,6 +6,7 @@ package HashTable;
 import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.Map;
+import java.util.TreeSet;
 
 public class App <K, T> {
 
@@ -31,7 +32,19 @@ Table.add("hello", 5);
 
     System.out.println(repeatedWord("Once upon a time, there was a brave princess who..."));
     System.out.println(repeatedWord("It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way – in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only..."));
-
+    TreeSet<String> treeSet1 = new TreeSet<>();
+    treeSet1.add("alaa");
+    treeSet1.add("A");
+    treeSet1.add("B");
+    treeSet1.add("C");
+    TreeSet<String> treeSet2 = new TreeSet<>();
+    treeSet2.add("alaa");
+    treeSet2.add("X");
+    treeSet2.add("Q");
+    treeSet2.add("M");
+    System.out.println("first tree: " + treeSet1);
+    System.out.println("second tree: " + treeSet2);
+    System.out.println( treeIntersection(treeSet1, treeSet2));
 
 
 
@@ -47,6 +60,14 @@ Table.add("hello", 5);
     return null;
   }
 
+
+  public static HashTable<Object,Object> treeIntersection(TreeSet<String> tree1, TreeSet<String> tree2) {
+    HashTable<Object, Object> hashTable = new HashTable<Object, Object>();
+    for (String word : tree1) {
+      if (tree2.contains(word)) hashTable.add(word, word);
+    }
+    return hashTable;
+  }
 
   }
 

@@ -5,6 +5,9 @@ package HashTable;
 
 
 import org.junit.jupiter.api.Test;
+
+import java.util.TreeSet;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
@@ -35,4 +38,22 @@ class AppTest {
     String book = "It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn’t know what I was doing in New York...";
     assertEquals("the", App.repeatedWord(book));
   }
-}
+
+  @Test
+
+  public void tree() {
+    TreeSet<String> tree1= new TreeSet<>();
+    tree1.add("alaa");
+    tree1.add("A");
+    tree1.add("B");
+    tree1.add("C");
+    TreeSet<String> tree2 = new TreeSet<>();
+    tree2.add("alaa");
+    tree2.add("X");
+    tree2.add("Q");
+    tree2.add("M");
+    assertEquals("HashTable{hashTable=[null, null, null, null, null, null, null, null, null,  [ {alaa:alaa} ] ]}",  App.treeIntersection(tree1, tree2).toString());
+  }
+
+  }
+

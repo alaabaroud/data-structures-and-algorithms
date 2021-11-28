@@ -12,3 +12,6 @@ to run this:
 run the intellij normal run button, BUT for the tests, please run it from the file Build.gradle test run.
 ## API
 <!-- Description of each method publicly available in each of your hashtable -->
+------------------
+tree :
+![treeHashed](treeHas.png)
