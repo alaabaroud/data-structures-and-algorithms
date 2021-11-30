@@ -4,8 +4,26 @@
 package MergeSort;
 
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import java.util.Arrays;
 
+import static org.junit.jupiter.api.Assertions.*;
 class AppTest {
 
-}
+  @Test
+  public void test1(){
+    int[] arr1 = {20,18,12,8,5,-2};
+    assertEquals("[-2, 5, 8, 12, 18, 20]", Arrays.toString(App.MergeSort(arr1)));
+  }
+
+  @Test
+  public void test2(){
+    int[] arr2 = {5, 12, 7, 5, 5, 7};
+    assertEquals("[5, 5, 5, 7, 7, 12]", Arrays.toString(App.MergeSort(arr2)));
+  }
+
+  @Test
+  public void test3() {
+    int[] arr3 = {2, 3, 5, 7, 13, 11};
+    assertEquals("[2, 3, 5, 7, 11, 13]", Arrays.toString(App.MergeSort(arr3)));
+  }
+  }
