@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="HashTable.AppTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-11-28T05:33:08" hostname="STDLTUC-L056" time="0.053">
+  <properties/>
+  <testcase name="hashMap_repeated_word()" classname="HashTable.AppTest" time="0.023"/>
+  <testcase name="tree()" classname="HashTable.AppTest" time="0.025"/>
+  <testcase name="hashTable()" classname="HashTable.AppTest" time="0.003"/>
+  <system-out><![CDATA[HashTable{hashTable=[ [ {table:2} {hash:8} ] , null,  [ {hello:5} ] , null, null, null,  [ {from:7} ] , null, null, null]}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

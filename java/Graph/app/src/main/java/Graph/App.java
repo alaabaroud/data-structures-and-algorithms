@@ -29,6 +29,7 @@ public class App {
       ////////////////////
       System.out.println(appGraph.breadthFirst("graph"));
 
+      System.out.println(appGraph.depthFirst("graph"));
 
 
     }
